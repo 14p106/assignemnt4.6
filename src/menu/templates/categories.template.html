@@ -1,0 +1,8 @@
+<a ui-sref="home">Home</a><span class="text-color"> &lt;</span> <span class="text-color">Categories</span>
+<h3 class="text-color">Categories</h3>
+<div ng-repeat="item in categoriesCtrl.items">
+  <a ui-sref='categories.items({categoryShortName: item.short_name})'>
+    {{item.name}}
+  </a>
+</div>
+<ui-view></ui-view>
